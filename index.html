@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- WEBSITE ICO -->
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- robot font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Nugett font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Fliper</title>
+  </head>
+  <body>
+    <!-- START NAV -->
+    <nav id="top">
+      <h2 id="color" class="color">Color Fliper</h2>
+      <h2>
+        Coded By Swìlam with
+        <span><i class="fas fa-heart" id="hearth"></i></span>
+      </h2>
+    </nav>
+    <!-- END NAV -->
+    <!-- START RANDOM COLOR -->
+    <section class="box random__color" id="randomColor">
+      <div class="container">
+        <h2>background color : <span id="text"></span></h2>
+        <button class="btn btn-hero" id="random">click me</button>
+      </div>
+      <div class="container__arrowDown">
+        <a href="#hexColor" class="to-top">Go to HEX </a>
+      </div>
+    </section>
+    <!-- END RANDOM COLOR -->
+    <!-- START HEX COLOR -->
+    <section class="box hex__color" id="hexColor">
+      <div class="container">
+        <div class="input">
+          <h2>background color : <span id="text"></span></h2>
+          <input
+            type="text"
+            id="input"
+            placeholder="You dont have to type # ex : 472b7"
+          />
+        </div>
+        <button class="btn btn-hero" id="hex">Choose</button>
+      </div>
+      <div class="container__arrowDown">
+        <a href="#top" class="to-top bot">Go to Random</a>
+      </div>
+    </section>
+    <!-- END HEX COLOR -->
+    <!-- JAVASCRPIT LINK -->
+    <script src="app.js"></script>
+  </body>
+</html>
